@@ -4,7 +4,7 @@ import NavIcon from '../components/NavIcon'
 const Navbar = () => {
   return (
     <div className='navbar'>
-         <NavIcon />
+         <NavIcon className="icon"/>
     </div>
   )
 }
