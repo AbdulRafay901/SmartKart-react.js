@@ -67,3 +67,35 @@
 .navbar .nav-icon .icon{
   font-size: 22px;
 }
+.categories{
+  background-color: #1F6971;
+  padding: 13px 0 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.categories .links{
+  display: flex;
+  gap: 30px;
+}
+.categories button{
+   background-color: transparent;
+   color: white;
+   border: none;
+   font-size: 14px;
+   letter-spacing: 1px;
+   position: relative;
+   padding: 0 0 8px 0;
+}
+.categories button::before{
+  content: "";
+  bottom: 0;
+  position: absolute;
+  background-color: white;
+  width: 0px;
+  height: 1.5px;
+  transition: 0.3s ease;
+}
+.categories button:hover::before{
+  width: 100%;
+}
