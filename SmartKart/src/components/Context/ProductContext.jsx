@@ -18,12 +18,24 @@ const ProductContext = (props) => {
       }
 
       fetch()
-  })
+  }, [])
+
+ const filterProducts = (categoryName) => {
+    
+    if (categoryName === 'all') {
+      setDisplayData(MainData);
+    } else {
+      
+      const filtered = MainData.filter((item) => item.category === categoryName);
+      setDisplayData(filtered); 
+    }
+  };
+  
 
 
   return (
     <div> 
-         <Product.Provider value={{DisplayData, MainData}}>
+         <Product.Provider value={{DisplayData, MainData, filterProducts}}>
            {props.children}
          </Product.Provider>
     </div>

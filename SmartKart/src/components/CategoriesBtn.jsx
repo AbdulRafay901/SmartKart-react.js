@@ -1,9 +1,9 @@
 import React from 'react'
 
-const CategoriesBtn = ({text}) => {
+const CategoriesBtn = ({text, clickAction}) => {
   return (
     <div>
-          <button>{text}</button>
+          <button onClick={clickAction}>{text}</button>
     </div>
   )
 }
