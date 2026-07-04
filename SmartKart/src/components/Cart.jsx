@@ -15,19 +15,17 @@ const Cart = ({ name, img, price, id, rating }) => {
                      <img src={img} alt={name} className="img-fluid" />
                 </div>
                 <div className="content">
-                      <p className='name'>{name}</p>
+                      <p className='name' style={{fontSize:'15px'}}>{name}</p>
                       <div className="rating">
                            
                           
                            {Array.from({ length: 5 }).map((_, index) => (
-                               index < starCount 
-                                 ? <SimpleStar key={index} /> 
-                                 : <Star key={index} />
+                               index < starCount ? <SimpleStar key={index} /> : <Star key={index} />
                            ))}
 
                       </div>
-                      <p className='price'>${price}</p>
-                      <Button text='Add to Cart'/>
+                      <p className='price' style={{fontSize:'15px'}}>${price}</p>
+                      <Button text='Add to Cart' size='15px'/>
                 </div>
          </div>
     </div>
