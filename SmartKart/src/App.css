@@ -189,10 +189,12 @@
   border-radius: 8px;
 }
 .center .cart .img img{
-  width: 120px;
+  width: 110px;
+  height: 110px;
 }
 .center .cart .content .name{
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 14px;
   margin: 5px 0 0 0 ;
 }
 .center .cart .content .star{
@@ -327,7 +329,6 @@
      row-gap: 10px;
    }
 }
-
 
 @media only screen and (max-width:425px){
    .navbar{
