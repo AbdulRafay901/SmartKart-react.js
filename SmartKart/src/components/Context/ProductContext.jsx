@@ -9,6 +9,7 @@ const ProductContext = (props) => {
   const [MainData, setMainData] = useState([])
   const [DisplayData, setDisplayData] = useState([])
 
+
   useEffect(() => {
      const fetch = async () => {
           const {data} = await axios.get('https://fakestoreapi.com/products');
@@ -24,9 +25,10 @@ const ProductContext = (props) => {
     
     if (categoryName === 'all') {
       setDisplayData(MainData);
-    } else {
+    }
+    else {
       
-      const filtered = MainData.filter((item) => item.category === categoryName);
+      const filtered = MainData.filter((item) => categoryName.includes(item.category));
       setDisplayData(filtered); 
     }
   };
@@ -35,7 +37,7 @@ const ProductContext = (props) => {
 
   return (
     <div> 
-         <Product.Provider value={{DisplayData, MainData, filterProducts}}>
+         <Product.Provider value={{DisplayData, MainData, filterProducts, }}>
            {props.children}
          </Product.Provider>
     </div>
@@ -43,3 +45,5 @@ const ProductContext = (props) => {
 }
 
 export default ProductContext
+
+

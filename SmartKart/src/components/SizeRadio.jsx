@@ -1,10 +1,10 @@
 import React from 'react'
 
-const SizeRadio = ({label}) => {
+const SizeRadio = ({label, action, value}) => {
   return (
     <div>
          <label htmlFor="radio">
-            <input type="radio" id='radio' hidden></input>
+            <input type="radio" id='radio' onClick={action} value={value} hidden></input>
             {label}
          </label>
     </div>

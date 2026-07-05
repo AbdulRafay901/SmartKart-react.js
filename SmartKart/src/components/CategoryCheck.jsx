@@ -1,10 +1,10 @@
 import React from 'react'
 
-const CategoryCheck = ({label}) => {
+const CategoryCheck = ({label,action, value, checked}) => {
   return (
     <div>
           <label>
-          <input type="checkbox"></input>
+          <input type="checkbox" onChange={action} value={value} checked={checked}></input>
            {label}
           </label>
     </div>
