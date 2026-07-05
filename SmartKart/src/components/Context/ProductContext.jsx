@@ -9,6 +9,8 @@ const ProductContext = (props) => {
   const [MainData, setMainData] = useState([])
   const [DisplayData, setDisplayData] = useState([])
 
+  console.log(MainData)
+
 
   useEffect(() => {
      const fetch = async () => {
@@ -32,12 +34,20 @@ const ProductContext = (props) => {
       setDisplayData(filtered); 
     }
   };
+
+
+  const PriceFilter = (price) => {
+     const filter = MainData.filter(M => M.price > 0 === M.price < price);
+     setDisplayData(filter)
+  }
+
+
   
 
 
   return (
     <div> 
-         <Product.Provider value={{DisplayData, MainData, filterProducts, }}>
+         <Product.Provider value={{DisplayData, MainData, filterProducts, PriceFilter}}>
            {props.children}
          </Product.Provider>
     </div>
