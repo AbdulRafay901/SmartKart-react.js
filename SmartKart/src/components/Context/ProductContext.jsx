@@ -37,7 +37,7 @@ const ProductContext = (props) => {
 
 
   const PriceFilter = (price) => {
-     const filter = MainData.filter(M => M.price > 0 === M.price < price);
+     const filter = MainData.filter(M => M.price <= price);
      setDisplayData(filter)
   }
 
