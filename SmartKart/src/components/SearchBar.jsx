@@ -11,7 +11,7 @@ const SearchBar = () => {
 
   const { Title } = useContext(Product)
 
-  const [search, setsearch] = useState()
+  const [search, setsearch] = useState("")
 
    const Search = () => {
        Title(search)
@@ -20,7 +20,7 @@ const SearchBar = () => {
   return (
     <div className='search-bar'>
          <CiSearch className='search-icon'/>
-         <input type="search" placeholder='Search'onChange={(e) => {
+         <input type="search" placeholder='Search' value={search}  onChange={(e) => {
               setsearch(e.target.value)
          }}></input>
          <div className="arrow-div">
