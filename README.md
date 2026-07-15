@@ -74,17 +74,6 @@ The primary goal of this project is to showcase modern frontend development skil
 - Dynamic rating display
 - Star-based UI
 
----
-
-## 📱 Responsive Design
-
-- Mobile Friendly
-- Tablet Friendly
-- Desktop Optimized
-- Modern UI
-- Clean Layout
-
----
 
 ## ⚡ Performance
 
@@ -165,15 +154,6 @@ npm run dev
 ```bash
 npm run build
 ```
-
----
-
-# 📸 Screenshots
-
-## 🏠 Home Page
-
-> Add your homepage screenshot here.
-
 ---
 
 # 🎓 What I Learned
