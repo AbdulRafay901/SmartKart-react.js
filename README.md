@@ -74,7 +74,6 @@ The primary goal of this project is to showcase modern frontend development skil
 - Dynamic rating display
 - Star-based UI
 
-
 ## ⚡ Performance
 
 - React Hooks
@@ -154,6 +153,7 @@ npm run dev
 ```bash
 npm run build
 ```
+
 ---
 
 # 🎓 What I Learned
@@ -179,7 +179,7 @@ This project helped strengthen my understanding of:
 
 ## 👨‍💻 Abdul Rafay
 
-Full Stack Web Developer
+Full Stack Web Developer | Wordpress Developer
 
 💼 GitHub
 
